@@ -72,7 +72,7 @@ const DisplaySuggestions = ( response ) => {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Get started by entering a city
         </p>
         <input onChange={(e) => setSearchCity(e.target.value)} style={{padding: 10, borderRadius: 5, borderWidth: 2, borderColor: 'blue'}}/>
 
