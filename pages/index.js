@@ -37,11 +37,10 @@ export default function Home() {
 const DisplaySuggestions = ( response ) => {
   const suggestions = [response.accomodation, response.activites];
 
-  console.log('suggestions', suggestions)
-  console.log(googleData)
   return (
     <div>
       {suggestions.map((suggestion, index) => <div key={index} className="suggestion">
+        <h2>{index === 0 ? 'Accomodation:' : 'Activities:'}</h2>
           <Image
                     src={googleData?.[index]?.imageUrl}
                     alt="External Image"
